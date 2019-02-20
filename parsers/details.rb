@@ -6,7 +6,7 @@ contract_details['bid_opening'] = body.at("h5:contains('Bid Opening')").next_ele
 contract_details['tender_booklet_price'] = body.at("h5:contains('Tender Booklet Price')").next_element.text.gsub(/SR/,'').strip
 contract_details['tender_contact_address'] = body.at("h5:contains('Tender Contact')").next_element.text.gsub(/Contact Address/,'').gsub(/Tel[^<>]+/,'').strip
 contract_details['tender_contact_phone'] = body.at("h5:contains('Tender Contact')").next_element.text[/(?<=No\.\:)([^<>]+?)\Z/].strip
-contract_details['__collection']='contracts'
+contract_details['_collection']='contracts'
 outputs<< contract_details
 
 
