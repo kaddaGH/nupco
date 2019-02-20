@@ -2,11 +2,11 @@ seeder:
   file: ./seeder/seeder.rb
   disabled: false
 parsers:
-  - page_type: products_listing
-    file: ./parsers/products_listing.rb
+  - page_type: listing
+    file: ./parsers/listing.rb
     disabled: false
-  - page_type: product_details
-    file: ./parsers/product_details.rb
+  - page_type: details
+    file: ./parsers/details.rb
     disabled: false
 exporters:
   - exporter_name: products_json
